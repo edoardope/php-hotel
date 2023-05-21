@@ -72,7 +72,7 @@ $hotels = [
 
             if ($parking == 'on') {
 
-                if ($hotel['vote'] == $vote) {
+                if ($hotel['vote'] == $vote && $hotel['parking'] == true) {
                     echo '<div class="card" style="width: 18rem;">
                             <div class="card-header">' . $hotel['name'] . '</div>
                             <ul class="list-group list-group-flush">
